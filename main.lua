@@ -8,7 +8,7 @@ while game.Players.NumPlayers < 2 do -- How much players that the server has to 
 	repeat wait(2) until game.Player.NumPlayers <= 2
 end
 
-for i = 50,0,-1 do -- How much time for the intermission
+for i = 50, 0, -1 do -- How much time for the intermission
 	status.Value = 'Intermission '..i
 	wait(1)
 end	
@@ -43,7 +43,7 @@ for _, player in pairs(game.Players:GetPlayers()) do
 	end
 end
 
-for i = 120,0,-1 do
+for i = 120, 0, -1 do
 	if i == 0 then
 		status.Value = 'The Round is Over!'
 		break
